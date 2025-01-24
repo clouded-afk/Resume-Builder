@@ -1,0 +1,8 @@
+.resume-header {
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.name, .contact {
+    text-align: center;
+}

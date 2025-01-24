@@ -1,5 +1,10 @@
-div {
+.personal-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
+    border: 1px solid red;
+}
+
+.personal-header {
+    text-align: center;
 }
