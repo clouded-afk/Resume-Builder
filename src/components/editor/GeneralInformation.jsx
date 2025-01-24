@@ -1,32 +1,39 @@
-import { useState } from "react";
+import React from "react";
 import "../../styles/GeneralInformation.css"
 
-export function GeneralInformation() {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
-    const [phoneNumber, setPhoneNumber] = useState('')
-    const [email, setEmail] = useState('')
+export function GeneralInformation({
+    firstName, setFirstName,
+    lastName, setLastName,
+    phoneNumber, setPhoneNumber,
+    email, setEmail
 
-    const fullName = firstName + ' ' + lastName
-
+}) {
     return (
-        <div>
-            <h2>Personal Information</h2>
+        <div className="personal-info">
+            <h2 className="personal-header">Personal Information</h2>
             <input
                 type="text"
                 placeholder="First Name"
+                value={firstName}
+                onChange={e => setFirstName(e.target.value)}
             />
             <input
                 type="text"
                 placeholder="Last Name"
+                value={lastName}
+                onChange={e => setLastName(e.target.value)}
             />
             <input
                 type="tel"
                 placeholder="999-999-9999"
+                value={phoneNumber}
+                onChange={e => setPhoneNumber(e.target.value)}
             />
             <input
                 type="email"
                 placeholder="example@example.com"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
             />
         </div>
     )
