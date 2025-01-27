@@ -1,5 +1,6 @@
 import { GeneralInformation } from "./GeneralInformation";
 import { EducationInformation } from "./EducationInformation";
+import '../../styles/FullEditor.css'
 
 export function FullEditor({
     firstName, setFirstName,
@@ -14,7 +15,7 @@ export function FullEditor({
     graduationYear, setGraduationYear
 }) {
     return (
-        <div>
+        <div className="editor-container">
             <GeneralInformation 
                 firstName={firstName}
                 setFirstName={setFirstName}
