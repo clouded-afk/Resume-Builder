@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GeneralInformation } from "./components/editor/GeneralInformation";
+import { FullEditor } from "./components/editor/FullEditor";
 import { FullResume } from "./components/resume/FullResume";
 import './App.css'
 
@@ -14,7 +14,7 @@ export function App() {
     const contactInformation = phoneNumber + ' || ' + email + ' || ' + location
     return (
         <div className="mainContainer">
-            <GeneralInformation 
+            <FullEditor 
                 firstName={firstName}
                 setFirstName={setFirstName}
                 lastName={lastName}
