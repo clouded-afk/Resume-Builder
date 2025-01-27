@@ -1,7 +1,6 @@
 .personal-info {
     display: flex;
     flex-direction: column;
-    width: 30%;
     border: 1px solid red;
 }
 
