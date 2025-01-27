@@ -5,7 +5,8 @@ export function GeneralInformation({
     firstName, setFirstName,
     lastName, setLastName,
     phoneNumber, setPhoneNumber,
-    email, setEmail
+    email, setEmail,
+    location, setLocation
 
 }) {
     return (
@@ -34,6 +35,12 @@ export function GeneralInformation({
                 placeholder="example@example.com"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
+            />
+            <input
+                type="text"
+                placeholder="City, State"
+                value={location}
+                onChange={e => setLocation(e.target.value)}
             />
         </div>
     )
