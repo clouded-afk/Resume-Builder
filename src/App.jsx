@@ -8,9 +8,10 @@ export function App() {
     const [lastName, setLastName] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [email, setEmail] = useState('')
+    const [location, setLocation] = useState('')
 
     const fullName = firstName + ' ' + lastName
-    const contactInformation = phoneNumber + ' || ' + email
+    const contactInformation = phoneNumber + ' || ' + email + ' || ' + location
     return (
         <div className="mainContainer">
             <GeneralInformation 
@@ -22,6 +23,8 @@ export function App() {
                 setPhoneNumber={setPhoneNumber}
                 email={email}
                 setEmail={setEmail}
+                location={location}
+                setLocation={setLocation}
             />
             <FullResume 
                 fullName={fullName}
