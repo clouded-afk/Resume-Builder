@@ -10,7 +10,8 @@ export function FullEditor({
     degree, setDegree,
     major, setMajor,
     schoolName, setSchoolName,
-    gradutionDate, setGraduationDate
+    gradutionMonth, setGraduationMonth,
+    graduationYear, setGraduationYear
 }) {
     return (
         <div>
@@ -33,8 +34,10 @@ export function FullEditor({
                 setMajor={setMajor}
                 schoolName={schoolName}
                 setSchoolName={setSchoolName}
-                gradutionDate={gradutionDate}
-                setGraduationDate={setGraduationDate}
+                gradutionMonth={gradutionMonth}
+                setGraduationMonth={setGraduationMonth}
+                graduationYear={graduationYear}
+                setGraduationYear={setGraduationYear}
             />
         </div>
     )
