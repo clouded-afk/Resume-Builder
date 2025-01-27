@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/EducationInformation.css'
 
 export function EducationInformation({
     degree, setDegree,
@@ -9,7 +10,7 @@ export function EducationInformation({
 }) {
     return (
         <div className="education-info">
-            <h2>Education</h2>
+            <h2 className="education-header">Education</h2>
             <input 
                 type="text"
                 placeholder="Degree Type"
