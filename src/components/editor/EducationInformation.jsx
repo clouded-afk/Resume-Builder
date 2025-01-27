@@ -4,7 +4,8 @@ export function EducationInformation({
     degree, setDegree,
     major, setMajor,
     schoolName, setSchoolName,
-    gradutionDate, setGraduationDate
+    gradutionMonth, setGraduationMonth,
+    graduationYear, setGraduationYear
 }) {
     return (
         <div className="education-info">
@@ -28,9 +29,16 @@ export function EducationInformation({
                 onChange={e => setSchoolName(e.target.value)}
             />
             <input 
-                type="date"
-                value={gradutionDate}
-                onChange={e => setGraduationDate(e.target.value)}
+                type="text"
+                placeholder="Graduation Month"
+                value={gradutionMonth}
+                onChange={e => setGraduationMonth(e.target.value)}
+            />
+            <input 
+                type="text"
+                placeholder="Graduation Year"
+                value={graduationYear}
+                onChange={e => setGraduationYear(e.target.value)}
             />
         </div>
     )
