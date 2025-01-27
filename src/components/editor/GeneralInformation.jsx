@@ -7,7 +7,6 @@ export function GeneralInformation({
     phoneNumber, setPhoneNumber,
     email, setEmail,
     location, setLocation
-
 }) {
     return (
         <div className="personal-info">
