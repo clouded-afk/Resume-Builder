@@ -1,0 +1,28 @@
+.education {
+    width: 95%;
+    margin: auto;
+}
+
+.education-section-header {
+    margin-bottom: 0;
+}
+
+.divider {
+    border: 1px solid black;
+}
+
+.degree-date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.degree {
+    font-weight: bold;
+}
+
+.grad-date {
+   justify-content: end;
+   font-weight: bold;
+}
