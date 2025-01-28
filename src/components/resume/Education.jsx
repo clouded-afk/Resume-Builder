@@ -1,3 +1,5 @@
+import '../../styles/ResumeEducation.css'
+
 export function Education({
     schoolName,
     degreeInformation,
@@ -5,7 +7,7 @@ export function Education({
 }) {
     return (
         <div className="education">
-            <h2>Education</h2>
+            <h2 className='education-section-header'>Education</h2>
             <div className="divider"></div>
             <div className="degree-date-container">
                 <div className="degree">{degreeInformation}</div>
