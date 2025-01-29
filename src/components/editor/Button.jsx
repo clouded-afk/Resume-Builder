@@ -1,9 +1,12 @@
+import React from "react"
+
 export function Button({
-    buttonName
+    buttonName,
+    onClick
 }) {
     return (
         <div className="button-container">
-            <button>{buttonName}</button>
+            <button onClick={onClick}>{buttonName}</button>
         </div>
     )
 }
