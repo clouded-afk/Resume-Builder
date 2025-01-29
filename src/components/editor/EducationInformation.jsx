@@ -5,7 +5,7 @@ export function EducationInformation({
     degree, setDegree,
     major, setMajor,
     schoolName, setSchoolName,
-    gradutionMonth, setGraduationMonth,
+    graduationMonth, setGraduationMonth,
     graduationYear, setGraduationYear
 }) {
     return (
@@ -32,7 +32,7 @@ export function EducationInformation({
             <input 
                 type="text"
                 placeholder="Graduation Month"
-                value={gradutionMonth}
+                value={graduationMonth}
                 onChange={e => setGraduationMonth(e.target.value)}
             />
             <input 
