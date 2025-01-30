@@ -1,5 +1,6 @@
 import { GeneralInformation } from "./GeneralInformation";
 import { EducationInformation } from "./EducationInformation";
+import { Button } from "./Button";
 import '../../styles/FullEditor.css'
 
 export function FullEditor({
@@ -8,11 +9,9 @@ export function FullEditor({
     phoneNumber, setPhoneNumber,
     email, setEmail,
     location, setLocation,
-    degree, setDegree,
-    major, setMajor,
-    schoolName, setSchoolName,
-    gradutionMonth, setGraduationMonth,
-    graduationYear, setGraduationYear
+    educationSections,
+    handleEducationInput,
+    addEducationSection
 }) {
     return (
         <div className="editor-container">
@@ -28,18 +27,26 @@ export function FullEditor({
                 location={location}
                 setLocation={setLocation}
             />
-            <EducationInformation 
-                degree={degree}
-                setDegree={setDegree}
-                major={major}
-                setMajor={setMajor}
-                schoolName={schoolName}
-                setSchoolName={setSchoolName}
-                gradutionMonth={gradutionMonth}
-                setGraduationMonth={setGraduationMonth}
-                graduationYear={graduationYear}
-                setGraduationYear={setGraduationYear}
-            />
+            <div className="education-editor-container">
+                <h2 className="education-header">Education</h2>
+                {educationSections.map((section, index) => (
+                    <EducationInformation 
+                        key={index}
+                        degree={section.degree}
+                        setDegree={(value) => handleEducationInput(index, 'degree', value)}
+                        major={section.major}
+                        setMajor={(value) => handleEducationInput(index, 'major', value)}
+                        schoolName={section.schoolName}
+                        setSchoolName={(value) => handleEducationInput(index, 'schoolName', value)}
+                        graduationMonth={section.graduationMonth}
+                        setGraduationMonth={(value) => handleEducationInput(index, 'graduationMonth', value)}
+                        graduationYear={section.graduationYear}
+                        setGraduationYear={(value) => handleEducationInput(index, 'graduationYear', value)}
+                    />
+                ))}
+                <Button buttonName={"Add Education"} onClick={addEducationSection}/>
+            </div>
+
         </div>
     )
 }
