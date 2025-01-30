@@ -5,3 +5,8 @@
 .education-header {
     text-align: center;
 }
+
+.education-button-container {
+    display: flex;
+    justify-content: space-around;
+}
