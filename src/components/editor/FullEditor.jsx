@@ -15,7 +15,7 @@ export function FullEditor({
     addEducationSection,
 }) {
     const handleEducationDelete = () => {
-        if (educationSections.length > 0) {
+        if (educationSections.length > 1) {
             const newSections = educationSections.slice(0, -1)
             setEducationSection(newSections)
         }
