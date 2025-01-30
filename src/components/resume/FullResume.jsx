@@ -6,9 +6,7 @@ import '../../styles/FullResume.css'
 export function FullResume({
     fullName,
     contactInformation,
-    degreeInformation,
-    schoolName,
-    graduationInformation
+    educationSections
 }) {
     return(
         <div className="resume-container">
@@ -16,10 +14,8 @@ export function FullResume({
                 fullName={fullName}
                 contactInformation={contactInformation}
             />
-            <Education 
-                degreeInformation={degreeInformation}
-                schoolName={schoolName}
-                graduationInformation={graduationInformation}
+            <Education
+                educationSections={educationSections}
             />
         </div>
     )
