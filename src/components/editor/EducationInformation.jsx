@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "./Button";
 import '../../styles/EducationInformation.css'
 
 export function EducationInformation({
@@ -11,7 +10,6 @@ export function EducationInformation({
 }) {
     return (
         <div className="education-info">
-            <h2 className="education-header">Education</h2>
             <input 
                 type="text"
                 placeholder="Degree Type"
@@ -42,7 +40,6 @@ export function EducationInformation({
                 value={graduationYear}
                 onChange={e => setGraduationYear(e.target.value)}
             />
-            <Button buttonName={"Add"}/>
         </div>
     )
 }
