@@ -41,6 +41,7 @@ export function App() {
                 location={location}
                 setLocation={setLocation}
                 educationSections={educationSections}
+                setEducationSection={setEducationSection}
                 handleEducationInput={handleEducationInput}
                 addEducationSection={addEducationSection}
             />
