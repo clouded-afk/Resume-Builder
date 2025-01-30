@@ -10,9 +10,17 @@ export function FullEditor({
     email, setEmail,
     location, setLocation,
     educationSections,
+    setEducationSection,
     handleEducationInput,
-    addEducationSection
+    addEducationSection,
 }) {
+    const handleEducationDelete = () => {
+        if (educationSections.length > 0) {
+            const newSections = educationSections.slice(0, -1)
+            setEducationSection(newSections)
+        }
+    }
+
     return (
         <div className="editor-container">
             <GeneralInformation 
@@ -45,6 +53,7 @@ export function FullEditor({
                     />
                 ))}
                 <Button buttonName={"Add Education"} onClick={addEducationSection}/>
+                <Button buttonName={"Delete Education"} onClick={handleEducationDelete} />
             </div>
 
         </div>
