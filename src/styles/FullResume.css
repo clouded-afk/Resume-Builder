@@ -1,3 +1,7 @@
 .resume-container {
     width: 100%;
 }
+
+.education-editor-container {
+    border: 1px solid blue;
+}
