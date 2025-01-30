@@ -52,8 +52,10 @@ export function FullEditor({
                         setGraduationYear={(value) => handleEducationInput(index, 'graduationYear', value)}
                     />
                 ))}
-                <Button buttonName={"Add Education"} onClick={addEducationSection}/>
-                <Button buttonName={"Delete Education"} onClick={handleEducationDelete} />
+                <div className="education-button-container">
+                    <Button buttonName={"Add Education"} onClick={addEducationSection}/>
+                    <Button buttonName={"Delete Education"} onClick={handleEducationDelete} />
+                </div>
             </div>
 
         </div>
