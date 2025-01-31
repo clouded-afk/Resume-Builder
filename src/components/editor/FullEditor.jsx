@@ -1,5 +1,6 @@
 import { GeneralInformation } from "./GeneralInformation";
 import { EducationInformation } from "./EducationInformation";
+import { WorkExperienceInformation } from "./WorkExperienceInformation";
 import { Button } from "./Button";
 import '../../styles/FullEditor.css'
 
@@ -13,6 +14,11 @@ export function FullEditor({
     setEducationSection,
     handleEducationInput,
     addEducationSection,
+    workExperienceSections,
+    setWorkExperienceSection,
+    handleWorkInput,
+    addWorkExperienceSection
+
 }) {
     const handleEducationDelete = () => {
         if (educationSections.length > 1) {
