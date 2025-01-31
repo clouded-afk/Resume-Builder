@@ -18,7 +18,7 @@ export function App() {
         setEducationSection([...educationSections, { degree: "", major: "", schoolName: "", gradutionMonth: "", graduationYear: ""}])
     }
 
-    const handleEducatiEducationonInput = (index, field, value) => {
+    const handleEducationInput = (index, field, value) => {
         const newEducationSections = [...educationSections]
         newEducationSections[index][field] = value
         setEducationSection(newEducationSections)
