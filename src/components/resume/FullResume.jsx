@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "./Header";
 import { Education } from "./Education";
 import '../../styles/FullResume.css'
