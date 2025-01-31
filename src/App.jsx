@@ -23,6 +23,10 @@ export function App() {
         newSections[index][field] = value
         setEducationSection(newSections)
     }
+
+    const [workSections, setWorkSection] = useState([
+        { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletOne: "", bulletTwo: "", bulletThree: ""}
+    ])
     
     const fullName = `${firstName} ${lastName}`
     const contactInformation = `${phoneNumber} || ${email} || ${location}`
