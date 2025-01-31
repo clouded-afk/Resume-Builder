@@ -18,10 +18,10 @@ export function App() {
         setEducationSection([...educationSections, { degree: "", major: "", schoolName: "", gradutionMonth: "", graduationYear: ""}])
     }
 
-    const handleEducationInput = (index, field, value) => {
-        const newSections = [...educationSections]
-        newSections[index][field] = value
-        setEducationSection(newSections)
+    const handleEducatiEducationonInput = (index, field, value) => {
+        const newEducationSections = [...educationSections]
+        newEducationSections[index][field] = value
+        setEducationSection(newEducationSections)
     }
 
     const [workSections, setWorkSection] = useState([
@@ -30,6 +30,12 @@ export function App() {
 
     const addWorkExperienceSection = () => {
         setWorkSection([...workSections, { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletOne: "", bulletTwo: "", bulletThree: ""}])
+    }
+
+    const handleWorkInput = (index, field, value) => {
+        const newWorkSections = [...workSections]
+        newWorkSections[index][field] = value
+        setWorkSection(newWorkSections)
     }
     
     const fullName = `${firstName} ${lastName}`
