@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/GeneralInformation.css"
 
 export function GeneralInformation({
