@@ -28,7 +28,7 @@ export function FullEditor({
     }
 
     const handleWorkDelete = () => {
-        if (workExperienceSections.leangth > 1) {
+        if (workExperienceSections.length > 1) {
             const newWorkSections = workExperienceSections.slice(0, -1)
             setWorkExperienceSection(newWorkSections)
         }
