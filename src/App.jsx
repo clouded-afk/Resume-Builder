@@ -25,11 +25,11 @@ export function App() {
     }
 
     const [workSections, setWorkSection] = useState([
-        { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletOne: "", bulletTwo: "", bulletThree: ""}
+        { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletPointOne: "", bulletPointTwo: "", bulletPointThree: ""}
     ])
 
     const addWorkExperienceSection = () => {
-        setWorkSection([...workSections, { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletOne: "", bulletTwo: "", bulletThree: ""}])
+        setWorkSection([...workSections, { jobTitle: "", companyName: "", companyLocation: "", startDate: "", endDate: "", bulletPointOne: "", bulletPointTwo: "", bulletPointThree: ""}])
     }
 
     const handleWorkInput = (index, field, value) => {
@@ -58,6 +58,10 @@ export function App() {
                 setEducationSection={setEducationSection}
                 handleEducationInput={handleEducationInput}
                 addEducationSection={addEducationSection}
+                workExperienceSections={workSections}
+                setWorkExperienceSection={setWorkSection}
+                addWorkExperienceSection={addWorkExperienceSection}
+                handleWorkInput={handleWorkInput}
             />
             <FullResume 
                 fullName={fullName}
