@@ -22,8 +22,15 @@ export function FullEditor({
 }) {
     const handleEducationDelete = () => {
         if (educationSections.length > 1) {
-            const newSections = educationSections.slice(0, -1)
-            setEducationSection(newSections)
+            const newEducationSections = educationSections.slice(0, -1)
+            setEducationSection(newEducationSections)
+        }
+    }
+
+    const handleWorkDelete = () => {
+        if (workExperienceSections.leangth > 1) {
+            const newWorkSections = workExperienceSections.slice(0, -1)
+            setWorkExperienceSection(newWorkSections)
         }
     }
 
@@ -41,6 +48,7 @@ export function FullEditor({
                 location={location}
                 setLocation={setLocation}
             />
+
             <div className="education-editor-container">
                 <h2 className="education-header">Education</h2>
                 {educationSections.map((section, index) => (
@@ -61,6 +69,35 @@ export function FullEditor({
                 <div className="education-button-container">
                     <Button buttonName={"Add Education"} onClick={addEducationSection}/>
                     <Button buttonName={"Delete Education"} onClick={handleEducationDelete} />
+                </div>
+            </div>
+            
+            <div className="work-editor-container">
+                <h2 className="work-header">Work Experience</h2>
+                {workExperienceSections.map((section, index) => (
+                    <WorkExperienceInformation 
+                        key={index}
+                        jobTitle={section.jobTitle}
+                        setJobTitle={(value) => handleWorkInput(index, 'jobTitle', value)}
+                        company={section.company}
+                        setCompany={(value) => handleWorkInput(index, 'company', value)}
+                        companyLocation={section.companyLocation}
+                        setCompanyLocation={(value) => handleWorkInput(index, 'companyLocation', value)}
+                        startDate={section.startDate}
+                        setStartDate={(value) => handleWorkInput(index, 'startDate', value)}
+                        endDate={section.endDate}
+                        setEndDate={(value) => handleWorkInput(index, 'endDate', value)}
+                        bulletPointOne={section.bulletPointOne}
+                        setBulletPointOne={(value) => handleWorkInput(index, 'bulletPointOne', value)}
+                        bulletPointTwo={section.bulletPointTwo}
+                        setBulletPointTwo={(value) => handleWorkInput(index, 'bulletPointTwo', value)}
+                        bulletPointThree={section.bulletPointThree}
+                        setBulletPointThree={(value) => handleWorkInput(index, 'bulletPointThree', value)}
+                        />
+                    ))}
+                <div className="work-button-container">
+                    <Button buttonName={"Add Work Experience"} onClick={addWorkExperienceSection}></Button>
+                    <Button buttonName={"Delete Work Experience"} onClick={handleWorkDelete}></Button>
                 </div>
             </div>
 
