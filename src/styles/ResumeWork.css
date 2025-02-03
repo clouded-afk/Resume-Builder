@@ -1,0 +1,21 @@
+.work {
+    width: 95%;
+    margin: auto;
+}
+
+.work-section-header {
+    margin-bottom: 0;
+}
+
+.job-title-dates-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title, .job-dates, .company-info {
+    font-weight: bold;
+}
+
+.job-details-container {
+    margin-top: 0;
+}
