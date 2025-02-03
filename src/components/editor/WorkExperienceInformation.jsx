@@ -1,3 +1,5 @@
+import '../../styles/WorkInformation.css'
+
 export function WorkExperienceInformation({
     jobTitle, setJobTitle,
     company, setCompany,
