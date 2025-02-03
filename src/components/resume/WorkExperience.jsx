@@ -1,3 +1,5 @@
+import '../../styles/ResumeWork.css'
+
 export function WorkExperience({
     workSections
 }) {
