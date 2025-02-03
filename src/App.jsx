@@ -67,6 +67,7 @@ export function App() {
                 fullName={fullName}
                 contactInformation={contactInformation}
                 educationSections={educationSections}
+                workSections={workSections}
             />
         </div>
     )
