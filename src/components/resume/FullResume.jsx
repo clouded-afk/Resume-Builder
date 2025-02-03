@@ -1,11 +1,13 @@
 import { Header } from "./Header";
 import { Education } from "./Education";
+import { WorkExperience } from "./WorkExperience";
 import '../../styles/FullResume.css'
 
 export function FullResume({
     fullName,
     contactInformation,
-    educationSections
+    educationSections,
+    workSections
 }) {
     return(
         <div className="resume-container">
@@ -15,6 +17,9 @@ export function FullResume({
             />
             <Education
                 educationSections={educationSections}
+            />
+            <WorkExperience 
+                workSections={workSections}
             />
         </div>
     )
