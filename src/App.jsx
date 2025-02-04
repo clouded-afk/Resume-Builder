@@ -37,6 +37,20 @@ export function App() {
         newWorkSections[index][field] = value
         setWorkSection(newWorkSections)
     }
+
+    const [skillSections, setSkillSection] = useState([
+        { skill: "" }
+    ])
+
+    const addSkillSection = () => {
+        setSkillSection([...skillSections, { skill: ""}])
+    }
+
+    const handleSkillInput = (index, field, value) => {
+        const newSkillSections = [...skillSections]
+        newSkillSections[index][field] = value
+        setSkillSection(newSkillSections)
+    }
     
     const fullName = `${firstName} ${lastName}`
     const contactInformation = `${phoneNumber} || ${email} || ${location}`
@@ -62,6 +76,10 @@ export function App() {
                 setWorkExperienceSection={setWorkSection}
                 addWorkExperienceSection={addWorkExperienceSection}
                 handleWorkInput={handleWorkInput}
+                skillSections={skillSections}
+                setSkillSection={setSkillSection}
+                addSkillSection={addSkillSection}
+                handleSkillInput={handleSkillInput}
             />
             <FullResume 
                 fullName={fullName}
