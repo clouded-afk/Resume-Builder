@@ -1,6 +1,7 @@
 import { GeneralInformation } from "./GeneralInformation";
 import { EducationInformation } from "./EducationInformation";
 import { WorkExperienceInformation } from "./WorkExperienceInformation";
+import { SkillsInformation } from "./SkillsInformation";
 import { Button } from "./Button";
 import '../../styles/FullEditor.css'
 
@@ -17,7 +18,11 @@ export function FullEditor({
     workExperienceSections,
     setWorkExperienceSection,
     handleWorkInput,
-    addWorkExperienceSection
+    addWorkExperienceSection,
+    skillSections,
+    setSkillSection,
+    handleSkillInput,
+    addSkillSection
 
 }) {
     const handleEducationDelete = () => {
@@ -98,6 +103,20 @@ export function FullEditor({
                 <div className="work-button-container">
                     <Button buttonName={"Add Work Experience"} onClick={addWorkExperienceSection}></Button>
                     <Button buttonName={"Delete Work Experience"} onClick={handleWorkDelete}></Button>
+                </div>
+            </div>
+
+            <div className="skills-editor-container">
+                <h2 className="skill-header">Skills</h2>
+                    {skillSections.map((section, index) => (
+                        <SkillsInformation 
+                            key={index}
+                            skill={section.skill}
+                            setSkill={(value) => handleSkillInput(index, 'skill', value)}
+                        />
+                    ))}
+                <div className="skills-button-container">
+                    <Button buttonName={"Add Skill"} onClick={addSkillSection}></Button>
                 </div>
             </div>
 
