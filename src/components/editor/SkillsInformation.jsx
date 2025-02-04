@@ -5,7 +5,7 @@ export function SkillsInformation({
         <div className="skill-info">
             <input 
                 type="text"
-                placeholder="skill"
+                placeholder="Skill"
                 value={skill}
                 onChange={e => setSkill(e.target.value)}
             />
