@@ -39,6 +39,13 @@ export function FullEditor({
         }
     }
 
+    const handleSkillDelete = () => {
+        if (skillSections.length > 1) {
+            const newSkillSections = skillSections.slice(0, -1)
+            setSkillSection(newSkillSections)
+        }
+    }
+
     return (
         <div className="editor-container">
             <GeneralInformation 
@@ -117,6 +124,7 @@ export function FullEditor({
                     ))}
                 <div className="skills-button-container">
                     <Button buttonName={"Add Skill"} onClick={addSkillSection}></Button>
+                    <Button buttonName={"Delete Skill"} onClick={handleSkillDelete}></Button>
                 </div>
             </div>
 
