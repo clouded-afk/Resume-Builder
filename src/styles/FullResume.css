@@ -1,3 +1,12 @@
 .resume-container {
     width: 100%;
 }
+
+.skills-section {
+    width: 95%;
+    margin: auto;
+}
+
+.skill-section-header {
+    margin-bottom: 0;
+}
