@@ -1,3 +1,5 @@
+import "../../styles/SkillsInformation.css"
+
 export function SkillsInformation({
     skill, setSkill
 }) {
