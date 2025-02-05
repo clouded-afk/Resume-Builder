@@ -27,3 +27,16 @@
     display: flex;
     justify-content: space-around;
 }
+
+.skills-editor-container {
+    border: 1px solid blue;
+}
+
+.skill-header {
+    text-align: center;
+}
+
+.skills-button-container {
+    display: flex;
+    justify-content: space-around;
+}
