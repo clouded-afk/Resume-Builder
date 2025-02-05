@@ -86,6 +86,7 @@ export function App() {
                 contactInformation={contactInformation}
                 educationSections={educationSections}
                 workSections={workSections}
+                skillsSections={skillSections}
             />
         </div>
     )
