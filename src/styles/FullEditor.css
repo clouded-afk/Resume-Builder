@@ -2,10 +2,6 @@
     width: 35%;
 }
 
-.education-editor-container {
-    border: 1px solid blue;
-}
-
 .education-header {
     text-align: center;
 }
@@ -15,10 +11,6 @@
     justify-content: space-around;
 }
 
-.work-editor-container {
-    border: 1px solid purple;
-}
-
 .work-header {
     text-align: center;
 }
@@ -26,10 +18,6 @@
 .work-button-container {
     display: flex;
     justify-content: space-around;
-}
-
-.skills-editor-container {
-    border: 1px solid blue;
 }
 
 .skill-header {
