@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FullEditor } from "./components/editor/FullEditor";
 import { FullResume } from "./components/resume/FullResume";
+import { PageHeader } from "./components/page-layout/PageHeader";
+import { PageFooter } from "./components/page-layout/PageFooter";
 import './App.css'
 
 export function App() {
@@ -57,37 +59,45 @@ export function App() {
 
     return (
         <div className="mainContainer">
-            <FullEditor 
-                firstName={firstName}
-                setFirstName={setFirstName}
-                lastName={lastName}
-                setLastName={setLastName}
-                phoneNumber={phoneNumber}
-                setPhoneNumber={setPhoneNumber}
-                email={email}
-                setEmail={setEmail}
-                location={location}
-                setLocation={setLocation}
-                educationSections={educationSections}
-                setEducationSection={setEducationSection}
-                handleEducationInput={handleEducationInput}
-                addEducationSection={addEducationSection}
-                workExperienceSections={workSections}
-                setWorkExperienceSection={setWorkSection}
-                addWorkExperienceSection={addWorkExperienceSection}
-                handleWorkInput={handleWorkInput}
-                skillSections={skillSections}
-                setSkillSection={setSkillSection}
-                addSkillSection={addSkillSection}
-                handleSkillInput={handleSkillInput}
-            />
-            <FullResume 
-                fullName={fullName}
-                contactInformation={contactInformation}
-                educationSections={educationSections}
-                workSections={workSections}
-                skillsSections={skillSections}
-            />
+            <div className="page-header">
+                <PageHeader />
+            </div>
+            <div className="body">
+                <FullEditor 
+                    firstName={firstName}
+                    setFirstName={setFirstName}
+                    lastName={lastName}
+                    setLastName={setLastName}
+                    phoneNumber={phoneNumber}
+                    setPhoneNumber={setPhoneNumber}
+                    email={email}
+                    setEmail={setEmail}
+                    location={location}
+                    setLocation={setLocation}
+                    educationSections={educationSections}
+                    setEducationSection={setEducationSection}
+                    handleEducationInput={handleEducationInput}
+                    addEducationSection={addEducationSection}
+                    workExperienceSections={workSections}
+                    setWorkExperienceSection={setWorkSection}
+                    addWorkExperienceSection={addWorkExperienceSection}
+                    handleWorkInput={handleWorkInput}
+                    skillSections={skillSections}
+                    setSkillSection={setSkillSection}
+                    addSkillSection={addSkillSection}
+                    handleSkillInput={handleSkillInput}
+                />
+                <FullResume 
+                    fullName={fullName}
+                    contactInformation={contactInformation}
+                    educationSections={educationSections}
+                    workSections={workSections}
+                    skillsSections={skillSections}
+                />
+            </div>
+            <div className="page-footer">
+                <PageFooter />
+            </div>
         </div>
     )
 }
