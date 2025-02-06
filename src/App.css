@@ -1,4 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .mainContainer {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+}
+
+.body {
+    display: flex;
     flex-direction: row;
+    flex: 1;
+}
+
+.page-footer {
+    margin-top: 10px;
+    box-shadow: 2px -2px 0px 0px #d6d3d1;
 }
