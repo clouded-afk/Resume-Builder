@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.footer-prefix {
+    padding-right: 5px;
+}
+
+a {
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
