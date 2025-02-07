@@ -55,7 +55,7 @@ export function App() {
     }
     
     const fullName = `${firstName} ${lastName}`
-    const contactInformation = `${phoneNumber} || ${email} || ${location}`
+    const contactInformation = `${phoneNumber} | ${email} | ${location}`
 
     return (
         <div className="mainContainer">
