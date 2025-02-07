@@ -33,7 +33,7 @@ export function EducationInformation({
                 value={graduationMonth}
                 onChange={e => setGraduationMonth(e.target.value)}
             />
-            <input 
+            <input className='last-input'
                 type="text"
                 placeholder="Graduation Year"
                 value={graduationYear}
