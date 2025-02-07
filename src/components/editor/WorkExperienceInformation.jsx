@@ -52,7 +52,7 @@ export function WorkExperienceInformation({
                 value={bulletPointTwo}
                 onChange={e => setBulletPointTwo(e.target.value)}
             />
-            <textarea 
+            <textarea className='last-textarea'
                 placeholder="Bullet Point Three"
                 value={bulletPointThree}
                 onChange={e => setBulletPointThree(e.target.value)}
