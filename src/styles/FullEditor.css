@@ -2,29 +2,22 @@
     width: 35%;
 }
 
-.education-header {
-    text-align: center;
-}
-
-.education-button-container {
+.education-editor-container, .work-editor-container, .skills-editor-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #d6d3d1;
 }
 
-.work-header {
+.education-header, .work-header, .skill-header {
     text-align: center;
+    margin-bottom: 15px;
 }
 
-.work-button-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.skill-header {
-    text-align: center;
-}
-
-.skills-button-container {
+.education-button-container, .work-button-container, .skills-button-container {
     display: flex;
     justify-content: space-around;
 }
