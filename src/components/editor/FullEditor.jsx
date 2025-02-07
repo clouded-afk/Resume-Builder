@@ -79,8 +79,8 @@ export function FullEditor({
                     />
                 ))}
                 <div className="education-button-container">
-                    <Button buttonName={"Add Education"} onClick={addEducationSection}/>
-                    <Button buttonName={"Delete Education"} onClick={handleEducationDelete} />
+                    <Button className="add" buttonName={"Add Education"} onClick={addEducationSection}/>
+                    <Button className="delete" buttonName={"Delete Education"} onClick={handleEducationDelete} />
                 </div>
             </div>
             
@@ -108,8 +108,8 @@ export function FullEditor({
                         />
                     ))}
                 <div className="work-button-container">
-                    <Button buttonName={"Add Work Experience"} onClick={addWorkExperienceSection}></Button>
-                    <Button buttonName={"Delete Work Experience"} onClick={handleWorkDelete}></Button>
+                    <Button className="add" buttonName={"Add Work Experience"} onClick={addWorkExperienceSection}></Button>
+                    <Button className="delete" buttonName={"Delete Work Experience"} onClick={handleWorkDelete}></Button>
                 </div>
             </div>
 
@@ -123,8 +123,8 @@ export function FullEditor({
                         />
                     ))}
                 <div className="skills-button-container">
-                    <Button buttonName={"Add Skill"} onClick={addSkillSection}></Button>
-                    <Button buttonName={"Delete Skill"} onClick={handleSkillDelete}></Button>
+                    <Button className="add" buttonName={"Add Skill"} onClick={addSkillSection}></Button>
+                    <Button className="delete" buttonName={"Delete Skill"} onClick={handleSkillDelete}></Button>
                 </div>
             </div>
 
