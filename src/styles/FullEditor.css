@@ -21,3 +21,29 @@
     display: flex;
     justify-content: space-around;
 }
+
+.add, .delete {
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.add {
+    background-color: #1e4a32;
+}
+
+.delete {
+    background-color: #942828;
+}
+
+.add:hover {
+    background-color: #286343;
+}
+
+.delete:hover {
+    background-color: #b83333;
+}
