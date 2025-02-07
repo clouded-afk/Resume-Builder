@@ -22,6 +22,12 @@
     flex: 1;
 }
 
+input {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
 .page-footer {
     margin-top: 10px;
     box-shadow: 2px -2px 0px 0px #d6d3d1;
