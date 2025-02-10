@@ -2,3 +2,10 @@
     display: flex;
     flex-direction: column;
 }
+
+.skills {
+    padding-top: 1%;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+}
