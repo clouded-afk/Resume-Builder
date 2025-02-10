@@ -5,3 +5,13 @@
 .name, .contact {
     text-align: center;
 }
+
+.name {
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.contact {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
