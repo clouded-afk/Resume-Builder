@@ -7,7 +7,7 @@ export function Skills({
         <div className="skills">
             {skillsSections.map((section, index) => (
                 <div key={index}>
-                    <div>&nbsp;{section.skill}&nbsp;|</div>
+                    <div>&nbsp;{section.skill}&nbsp;{index < skillsSections.length - 1 && '|'}</div>
                 </div>
             ))}
         </div>
