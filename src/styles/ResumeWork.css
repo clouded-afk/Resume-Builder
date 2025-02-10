@@ -5,11 +5,13 @@
 
 .work-section-header {
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .job-title-dates-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 1%;
 }
 
 .job-title, .job-dates, .company-info {
@@ -18,4 +20,8 @@
 
 .job-details-container {
     margin-top: 0;
+}
+
+.bullet-point {
+    word-wrap: break-word;
 }
