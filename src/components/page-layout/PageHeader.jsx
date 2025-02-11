@@ -26,7 +26,7 @@ export function PageHeader() {
     return (
         <div className="header">
             <h1>Build a Resume</h1>
-            <Button buttonName={"Save"} onClick={savePDF}></Button>
+            <Button className={"save-button"} buttonName={"Download PDF"} onClick={savePDF}></Button>
         </div>
     )
 }
