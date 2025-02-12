@@ -20,3 +20,10 @@
 .save-button:hover {
     background-color: #286343;
 }
+
+@media (min-width: 1400px) {
+    .header {
+        max-width: 60%;
+        margin: auto;
+    }
+}
