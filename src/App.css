@@ -49,3 +49,19 @@ input {
         margin-right: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    .editor-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .resume-container {
+        max-width: 900px;
+        height: 1150px;
+    }
+}
