@@ -1,5 +1,6 @@
 .editor-container {
     width: 35%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .education-editor-container, .work-editor-container, .skills-editor-container {
