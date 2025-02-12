@@ -32,3 +32,20 @@ input {
     margin-top: 10px;
     box-shadow: 2px -2px 0px 0px #d6d3d1;
 }
+
+@media (min-width: 1400px) {
+    .body  {
+        display: flex;
+        width: 55%;
+        margin: auto;
+    }
+
+    .editor-container {
+        max-width: 40%;
+        min-width: 35%;
+    }
+
+    .resume-container {
+        margin-right: 0;
+    }
+}
